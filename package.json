@@ -1,0 +1,13 @@
+{
+  "name": "learning-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./development && docker-compose up -d",
+    "stop": "cd ./development && docker-compose down",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  learning-deploy:
+    build:
+      context: ../learning-deploy
+      dockerfile: ./deployment/development/Dockerfile
+    container_name: learning-deploy
+    ports:
+      - 1337:1337
+    volumes:
+      - ../learning-deploy:/cris-learning-deploy
+    networks:
+      - learning-network
+networks:
+  learning-network:

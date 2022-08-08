@@ -1,0 +1,26 @@
+{
+  "name": "learning-deployment",
+  "version": "1.0.0",
+  "description": "Gcloud",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azoom-nguyen-van-nam/learning-deployment.git"
+  },
+  "keywords": [
+    "deployment"
+  ],
+  "author": "n-v-nam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azoom-nguyen-van-nam/learning-deployment/issues"
+  },
+  "homepage": "https://github.com/azoom-nguyen-van-nam/learning-deployment#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
