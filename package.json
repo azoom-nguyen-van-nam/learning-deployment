@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd ./development && docker-compose up -d",
+    "dev": "cd ./development && docker-compose up -d",
+    "start": "cd ./learning-deploy && yarn start",
     "stop": "cd ./development && docker-compose down",
+    "delete-old-staging-tags": "git fetch --tags && git push origin --delete $(git tag -l 'staging-*') || true && git fetch origin --prune 'refs/tags/*:refs/tags/*'",
+    "staging:deploy": "yarn delete-old-staging-tags && TAG=`echo staging-$(date +%Y%m%d-%H%M%S)` && git tag $TAG && git push origin $TAG",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

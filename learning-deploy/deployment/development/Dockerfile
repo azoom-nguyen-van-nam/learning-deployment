@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 ENV NODE_ENV=dev
 
-WORKDIR /example-server
+WORKDIR /app
 
 COPY package*.json ./
 RUN npm install
